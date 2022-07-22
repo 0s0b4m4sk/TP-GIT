@@ -14,3 +14,16 @@ div.carre
 	background: red;
 	display: flex;
 }
+
+
+footer
+{
+position: absolute;  
+left: 10px;  
+bottom: 0;  
+right: 10px;   
+width: 100%;  
+background-color: orange;  
+color: black;  
+text-align: start;
+}
