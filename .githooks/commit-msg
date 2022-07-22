@@ -1,11 +1,8 @@
 #!/usr/bin/env 
 
-branch = %x[git rev-parse --abbrev-ref HEAD]
 regex = /\[ref: [0-9]+\]/
-match_data = branch.match(regex)
 
 commit = false 
-
 commitName = IO.read(ARGV[0])
 
 if regex.match(commitName)
@@ -16,5 +13,5 @@ if commit
 	exit 0
 end
 
-puts "Inavalide commit description"
+puts "Invalide commit description"
 exit 1 
